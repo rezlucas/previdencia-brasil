@@ -288,9 +288,9 @@ export function Footer() {
   return (
     <footer className="relative text-stone-300" style={{ backgroundColor: DARK_BLUE }}>
       {/* Onda no topo */}
-      <div className="overflow-hidden leading-none">
-        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" className="w-full h-14 block" fill={DARK_BLUE}>
-          <path d="M0,0 C360,60 1080,0 1440,40 L1440,0 L0,0 Z" fill="white" />
+      <div className="overflow-hidden leading-none" style={{ lineHeight: 0 }}>
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" className="w-full h-14 block">
+          <path d="M0,40 C360,0 1080,60 1440,20 L1440,60 L0,60 Z" fill={DARK_BLUE} />
         </svg>
       </div>
 
