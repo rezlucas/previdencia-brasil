@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import {
   CheckCircle, Clock, UserCheck, TrendingUp, ArrowRight,
   FileText, Banknote, ShieldCheck, Lock, Star, ChevronDown,
-  HeartPulse, HandCoins, RefreshCw, Scale, Baby, Minus, MapPin, Phone,
+  HeartPulse, HandCoins, RefreshCw, Scale, Baby, Minus,
 } from "lucide-react";
 import {
   BLUE, DARK_BLUE, YELLOW, GREEN, LIGHT_BG,

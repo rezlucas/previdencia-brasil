@@ -188,7 +188,7 @@ export function WaIcon({ size = 16 }: { size?: number }) {
 }
 
 // ─── Navbar ────────────────────────────────────────────────────────────────────
-export function Navbar({ isHome = true }: { isHome?: boolean }) {
+export function Navbar({ isHome: _isHome = true }: { isHome?: boolean }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
