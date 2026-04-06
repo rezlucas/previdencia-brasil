@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ShieldCheck, Phone, Mail, MapPin, Menu, X, ArrowRight } from "lucide-react";
+import { ShieldCheck, Menu, X, ArrowRight } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
 // ─── Brand Colors ──────────────────────────────────────────────────────────────
@@ -286,10 +286,17 @@ export function Footer() {
   ];
 
   return (
-    <footer className="text-stone-300" style={{ backgroundColor: DARK_BLUE }}>
-      <div className="max-w-6xl mx-auto px-6 pt-16 pb-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-          <div className="sm:col-span-2 lg:col-span-1">
+    <footer className="relative text-stone-300" style={{ backgroundColor: DARK_BLUE }}>
+      {/* Onda no topo */}
+      <div className="overflow-hidden leading-none">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" className="w-full h-14 block" fill={DARK_BLUE}>
+          <path d="M0,0 C360,60 1080,0 1440,40 L1440,0 L0,0 Z" fill="white" />
+        </svg>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-6 pt-8 pb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 mb-12">
+          <div>
             <Link to="/" className="inline-block mb-5">
               <img
                 src="/imagens/logos/logo.webp"
@@ -331,33 +338,6 @@ export function Footer() {
                   <button onClick={e.action} className="text-sm hover:text-white transition-colors text-left cursor-pointer">{e.label}</button>
                 </li>
               ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white font-semibold text-sm mb-5">Contato</h4>
-            <ul className="space-y-3">
-              <li>
-                <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 text-sm hover:text-white transition-colors">
-                  <WaIcon size={16} />WhatsApp
-                </a>
-              </li>
-              <li>
-                <a href="mailto:contato@previdenciabrasil.com.br" className="flex items-start gap-2 text-sm hover:text-white transition-colors">
-                  <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />contato@previdenciabrasil.com.br
-                </a>
-              </li>
-              <li>
-                <div className="flex items-start gap-2 text-sm">
-                  <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                  <span>Av. Paulista, 1000<br />São Paulo – SP</span>
-                </div>
-              </li>
-              <li>
-                <a href="tel:+5511999999999" className="flex items-start gap-2 text-sm hover:text-white transition-colors">
-                  <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />(11) 99999-9999
-                </a>
-              </li>
             </ul>
           </div>
         </div>
