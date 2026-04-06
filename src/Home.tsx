@@ -43,12 +43,6 @@ function Hero() {
 
       <div className="hidden md:flex relative h-full max-w-6xl mx-auto px-6 flex-col justify-center" style={{ minHeight: "92vh" }}>
         <div className="max-w-xl py-24">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold mb-6 border"
-            style={{ borderColor: YELLOW, color: YELLOW }}>
-            <ShieldCheck className="w-3.5 h-3.5" />
-            Previdência Brasil — Advocacia Especializada
-          </div>
           <h1 className="text-5xl xl:text-6xl font-extrabold text-white leading-[1.1] mb-4 tracking-tight">
             Conquiste seu<br />benefício do INSS<br />
             <span style={{ color: YELLOW }}>sem pagar nada</span><br />adiantado.
@@ -70,7 +64,7 @@ function Hero() {
             </a>
             <button
               onClick={() => scrollTo("servicos")}
-              className="inline-flex items-center gap-2 font-semibold px-8 py-4 rounded-full text-sm border border-white/30 text-white hover:bg-white/10 transition-all"
+              className="inline-flex items-center gap-2 font-semibold px-8 py-4 rounded-full text-sm border border-white/30 text-white hover:bg-white/10 transition-all cursor-pointer"
             >
               Ver Serviços
               <ArrowRight className="w-4 h-4" />
@@ -91,11 +85,6 @@ function Hero() {
 
       {/* Mobile */}
       <div className="md:hidden flex flex-col px-6 pt-12 pb-24" style={{ backgroundColor: DARK_BLUE }}>
-        <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold mb-5 border w-fit"
-          style={{ borderColor: YELLOW, color: YELLOW }}>
-          <ShieldCheck className="w-3.5 h-3.5" />
-          Advocacia Especializada
-        </div>
         <h1 className="text-4xl font-extrabold text-white leading-[1.15] mb-4 tracking-tight">
           Conquiste seu benefício do INSS{" "}
           <span style={{ color: YELLOW }}>sem pagar nada</span> adiantado.
@@ -191,7 +180,7 @@ function Servicos() {
               {/* Icon */}
               <div
                 className="w-14 h-14 rounded-xl flex items-center justify-center mb-6 flex-shrink-0"
-                style={{ backgroundColor: LIGHT_BG, color: BLUE }}
+                style={{ backgroundColor: DARK_BLUE, color: YELLOW }}
               >
                 <ServiceIcon name={item.iconName} size={28} />
               </div>
@@ -219,10 +208,16 @@ function Servicos() {
               {/* CTA */}
               <Link
                 to={`/servicos/${item.slug}`}
-                className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl border-2 font-semibold text-sm transition-all hover:text-white"
-                style={{ borderColor: DARK_BLUE, color: DARK_BLUE }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = DARK_BLUE; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = "transparent"; (e.currentTarget as HTMLElement).style.color = DARK_BLUE; }}
+                className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl border-2 font-semibold text-sm transition-all cursor-pointer"
+                style={{ borderColor: GREEN, color: GREEN, backgroundColor: "transparent" }}
+                onMouseEnter={e => {
+                  (e.currentTarget as HTMLElement).style.backgroundColor = GREEN;
+                  (e.currentTarget as HTMLElement).style.color = "white";
+                }}
+                onMouseLeave={e => {
+                  (e.currentTarget as HTMLElement).style.backgroundColor = "transparent";
+                  (e.currentTarget as HTMLElement).style.color = GREEN;
+                }}
               >
                 Consultar Especialista
               </Link>
@@ -298,11 +293,11 @@ function Sobre() {
               <img src="/imagens/nosso-compromisso-1.webp" alt="Nosso compromisso" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col gap-4">
-              <div className="rounded-2xl flex items-center justify-center py-8 px-6" style={{ backgroundColor: DARK_BLUE }}>
+              <div className="rounded-2xl flex items-center justify-center py-8 px-6" style={{ backgroundColor: GREEN }}>
                 <img
                   src="/imagens/logos/logo.webp"
                   alt="Previdência Brasil"
-                  className="h-20 w-auto object-contain select-none brightness-0 invert"
+                  className="h-16 w-auto object-contain select-none"
                   draggable={false}
                 />
               </div>
