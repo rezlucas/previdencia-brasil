@@ -676,7 +676,7 @@ function FAQ() {
 // ─── Home ─────────────────────────────────────────────────────────────────────
 export default function Home() {
   useEffect(() => {
-    document.title = "Previdência Brasil — Advocacia Previdenciária";
+    document.title = "Previdência Brasil, Advocacia Previdenciária";
     window.scrollTo(0, 0);
   }, []);
 

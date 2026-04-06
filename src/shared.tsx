@@ -24,7 +24,7 @@ export const SERVICES = [
     desc: "Benefício negado ou cancelado injustamente? Lutamos pelo seu direito quando você está impossibilitado de trabalhar por doença ou acidente.",
     bullets: ["Análise do caso sem custo", "Perícia médica judicial", "Recursos contra negativas"],
     hero: "Você não pode trabalhar por motivo de saúde. Nós lutamos pelo que é seu.",
-    heroSub: "Benefício negado ou cancelado? Atuamos em todas as etapas — administrativa e judicial — para garantir seu direito.",
+    heroSub: "Benefício negado ou cancelado? Atuamos em todas as etapas, administrativa e judicial, para garantir seu direito.",
     content: {
       intro: "O Auxílio-Doença (agora chamado de Benefício por Incapacidade Temporária) é garantido a quem fica temporariamente impossibilitado de trabalhar por doença ou acidente. O INSS, no entanto, costuma negar ou cancelar esse benefício de forma injusta.",
       how: [
@@ -50,7 +50,7 @@ export const SERVICES = [
     desc: "Garantimos seu direito ao salário-maternidade, seja você CLT, autônoma, MEI ou desempregada que contribuiu com o INSS.",
     bullets: ["Para todas as categorias", "Gestantes e adotantes", "Retroativo quando negado"],
     hero: "Você tem direito ao salário-maternidade. Não deixe o INSS te negar.",
-    heroSub: "CLT, autônoma, MEI ou desempregada — se você contribuiu com o INSS, tem direito. Garantimos esse benefício para você.",
+    heroSub: "CLT, autônoma, MEI ou desempregada: se você contribuiu com o INSS, tem direito. Garantimos esse benefício para você.",
     content: {
       intro: "O salário-maternidade é um direito garantido a todas as seguradas do INSS, independentemente da categoria de trabalho. Muitas mulheres têm esse benefício negado por falta de informação ou erros no processo.",
       how: [
@@ -76,7 +76,7 @@ export const SERVICES = [
     desc: "Vamos analisar seu histórico contributivo e garantir que você se aposente com o melhor valor possível.",
     bullets: ["Cálculo de tempo completo", "Inclusão de períodos especiais", "Melhor regra de transição"],
     hero: "Você merece se aposentar com o melhor valor possível.",
-    heroSub: "Analisamos todo o seu histórico contributivo — inclusive períodos informais, rurais e especiais — para garantir a maior aposentadoria a que você tem direito.",
+    heroSub: "Analisamos todo o seu histórico contributivo, inclusive períodos informais, rurais e especiais, para garantir a maior aposentadoria a que você tem direito.",
     content: {
       intro: "A aposentadoria pelo INSS pode ser por idade, por tempo de contribuição ou especial (trabalho insalubre). O cálculo incorreto é um dos maiores problemas: muitos aposentados recebem menos do que têm direito.",
       how: [
@@ -139,7 +139,7 @@ export const SERVICES = [
         "Cálculo e cobrança dos valores retroativos (precatório ou RPV)",
       ],
       faq: [
-        { q: "Quanto tempo tenho para pedir revisão?", a: "Há um prazo de 10 anos para contestar benefícios já concedidos. Não espere — cada mês que passa é dinheiro que você deixa de receber." },
+        { q: "Quanto tempo tenho para pedir revisão?", a: "Há um prazo de 10 anos para contestar benefícios já concedidos. Não espere, pois cada mês que passa é dinheiro que você deixa de receber." },
         { q: "Minha pensão por morte foi calculada com valor baixo. Posso revisar?", a: "Sim. Pensões por morte frequentemente são calculadas de forma incorreta, especialmente quando o falecido tinha períodos de trabalho não registrados." },
         { q: "Se a revisão for aprovada, como recebo os atrasados?", a: "Por precatório ou RPV (Requisição de Pequeno Valor), dependendo do valor. Nossa equipe acompanha todo o processo até o recebimento." },
       ],
@@ -156,7 +156,7 @@ export const SERVICES = [
     hero: "O INSS negou. Mas a última palavra é da Justiça.",
     heroSub: "Somos especializados em reverter negativas do INSS, tanto na esfera administrativa quanto judicial. Se você tem direito, vamos provar.",
     content: {
-      intro: "O INSS nega milhares de benefícios legítimos todos os anos. Um 'não' do INSS não é definitivo — é o começo de um processo que, com os advogados certos, frequentemente resulta em aprovação.",
+      intro: "O INSS nega milhares de benefícios legítimos todos os anos. Um 'não' do INSS não é definitivo: é o começo de um processo que, com os advogados certos, frequentemente resulta em aprovação.",
       how: [
         "Análise imediata da negativa e seus fundamentos",
         "Recurso administrativo bem fundamentado junto ao INSS",
@@ -165,7 +165,7 @@ export const SERVICES = [
         "Execução da sentença e recebimento do benefício e retroativos",
       ],
       faq: [
-        { q: "O INSS negou meu benefício. Qual é o prazo para recorrer?", a: "O prazo para recurso administrativo é de 30 dias. Não perca esse prazo — entre em contato imediatamente para analisarmos seu caso." },
+        { q: "O INSS negou meu benefício. Qual é o prazo para recorrer?", a: "O prazo para recurso administrativo é de 30 dias. Não perca esse prazo, entre em contato imediatamente para analisarmos seu caso." },
         { q: "Já recorri pelo INSS e negaram de novo. O que faço?", a: "Você pode entrar com ação judicial. O Judiciário é independente do INSS e muitas vezes decide de forma diferente, especialmente com boa representação jurídica." },
         { q: "Quanto tempo leva uma ação judicial previdenciária?", a: "Nos Juizados Especiais Federais, ações simples podem ser resolvidas em 6 a 18 meses. Nossa equipe te mantém informado a cada passo." },
       ],
