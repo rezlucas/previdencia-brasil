@@ -2,6 +2,28 @@ import { useState, useEffect } from "react";
 import { ShieldCheck, Menu, X, ArrowRight } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
+// ─── Wavy Divider ─────────────────────────────────────────────────────────────
+export function WavyDivider({ className = "" }: { className?: string }) {
+  return (
+    <svg
+      width="64"
+      height="10"
+      viewBox="0 0 64 10"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <path
+        d="M0 5 C8 1, 16 9, 24 5 S40 1, 48 5 S56 9, 64 5"
+        stroke="#FFD900"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        fill="none"
+      />
+    </svg>
+  );
+}
+
 // ─── Brand Colors ──────────────────────────────────────────────────────────────
 export const BLUE       = "#1E3B8A";
 export const DARK_BLUE  = "#0E1B3F";

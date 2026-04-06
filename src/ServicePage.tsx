@@ -7,7 +7,7 @@ import {
 import { useState } from "react";
 import {
   BLUE, DARK_BLUE, YELLOW, GREEN, LIGHT_BG,
-  WA_LINK, SERVICES, WaIcon, Navbar, Footer, FloatingWa,
+  WA_LINK, SERVICES, WaIcon, Navbar, Footer, FloatingWa, WavyDivider,
 } from "./shared";
 
 // ─── Icon resolver ─────────────────────────────────────────────────────────────
@@ -172,7 +172,7 @@ export default function ServicePage() {
               <h2 className="text-3xl font-extrabold mb-6 leading-tight" style={{ color: DARK_BLUE }}>
                 {service.title}
               </h2>
-              <div className="w-10 h-1 rounded-full mb-6" style={{ backgroundColor: YELLOW }} />
+              <WavyDivider className="mb-6" />
               <p className="text-stone-500 text-base leading-relaxed mb-8">{service.content.intro}</p>
 
               {/* Steps — visible on mobile too */}

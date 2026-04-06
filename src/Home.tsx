@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import {
   BLUE, DARK_BLUE, YELLOW, GREEN, LIGHT_BG,
-  WA_LINK, SERVICES, scrollTo, WaIcon, Navbar, Footer, FloatingWa,
+  WA_LINK, SERVICES, scrollTo, WaIcon, Navbar, Footer, FloatingWa, WavyDivider,
 } from "./shared";
 
 // ─── Icon resolver ─────────────────────────────────────────────────────────────
@@ -163,7 +163,7 @@ function Servicos() {
           <h2 className="text-4xl sm:text-5xl font-extrabold mb-4 leading-tight" style={{ color: DARK_BLUE }}>
             Tipos de Benefícios que<br />Recuperamos
           </h2>
-          <div className="w-16 h-1 rounded-full mx-auto mb-6" style={{ backgroundColor: YELLOW }} />
+          <WavyDivider className="mx-auto mb-6" />
           <p className="text-stone-500 text-base leading-relaxed">
             Especialistas em garantir que você receba todos os benefícios previdenciários aos quais
             tem direito. Atuamos em todas as esferas: administrativa e judicial.
@@ -248,13 +248,13 @@ function Sobre() {
             <h2 className="text-3xl sm:text-4xl font-extrabold mb-6 leading-tight" style={{ color: DARK_BLUE }}>
               Você merece o que é<br />seu por direito.
             </h2>
-            <div className="w-10 h-1 rounded-full mb-8" style={{ backgroundColor: YELLOW }} />
+            <WavyDivider className="mb-8" />
             <p className="text-stone-500 text-base leading-relaxed mb-6">
               A Previdência Brasil nasceu da indignação com a quantidade de brasileiros que têm seus
               benefícios negados ou mal calculados pelo INSS. Nossa missão é simples: garantir que
               você receba o que é seu.
             </p>
-            <div className="w-10 h-1 rounded-full mb-8" style={{ backgroundColor: YELLOW }} />
+            <WavyDivider className="mb-8" />
             <p className="text-stone-500 text-base leading-relaxed mb-10">
               Combinamos inteligência jurídica com atendimento humanizado para analisar seu caso
               em tempo real, gratuitamente pelo WhatsApp, e só cobramos quando você vencer. Sem
@@ -341,7 +341,7 @@ function ComoFunciona() {
             </p>
             <h2 className="text-4xl font-extrabold" style={{ color: DARK_BLUE }}>Como funciona</h2>
           </div>
-          <div className="w-16 h-1 rounded-full" style={{ backgroundColor: YELLOW }} />
+          <WavyDivider />
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
@@ -620,7 +620,7 @@ function FAQ() {
             <h2 className="text-4xl font-extrabold mb-4" style={{ color: DARK_BLUE }}>
               Tire suas dúvidas<br />antes de começar.
             </h2>
-            <div className="w-10 h-1 rounded-full mb-8" style={{ backgroundColor: YELLOW }} />
+            <WavyDivider className="mb-8" />
             <p className="text-stone-500 leading-relaxed mb-8">
               Sabemos que o público do INSS tem muitas dúvidas e desconfianças. Aqui respondemos
               as principais com total transparência.
