@@ -111,7 +111,7 @@ export default function ServicePage() {
                 </a>
                 <button
                   onClick={() => navigate(-1)}
-                  className="inline-flex items-center gap-2 font-semibold px-6 py-4 rounded-full text-sm border border-white/30 text-white hover:bg-white/10 transition-all"
+                  className="inline-flex items-center gap-2 font-semibold px-6 py-4 rounded-full text-sm border border-white/30 text-white hover:bg-white/10 transition-all cursor-pointer"
                 >
                   <ArrowLeft className="w-4 h-4" />
                   Voltar

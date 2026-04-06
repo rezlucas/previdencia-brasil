@@ -201,10 +201,10 @@ export function Navbar({ isHome: _isHome = true }: { isHome?: boolean }) {
 
   const links = [
     { label: "Início", action: () => navigate("/") },
-    { label: "Como Funciona", action: () => { navigate("/"); setTimeout(() => scrollTo("como-funciona"), 100); } },
-    { label: "Serviços", action: () => { navigate("/"); setTimeout(() => scrollTo("servicos"), 100); } },
-    { label: "Depoimentos", action: () => { navigate("/"); setTimeout(() => scrollTo("depoimentos"), 100); } },
-    { label: "FAQ", action: () => { navigate("/"); setTimeout(() => scrollTo("faq"), 100); } },
+    { label: "Como Funciona", action: () => navigate("/", { state: { scrollTo: "como-funciona" } }) },
+    { label: "Serviços", action: () => navigate("/", { state: { scrollTo: "servicos" } }) },
+    { label: "Depoimentos", action: () => navigate("/", { state: { scrollTo: "depoimentos" } }) },
+    { label: "FAQ", action: () => navigate("/", { state: { scrollTo: "faq" } }) },
   ];
 
   return (
@@ -280,9 +280,9 @@ export function Footer() {
   const navigate = useNavigate();
 
   const empresa = [
-    { label: "Como Funciona", action: () => { navigate("/"); setTimeout(() => scrollTo("como-funciona"), 100); } },
-    { label: "Depoimentos", action: () => { navigate("/"); setTimeout(() => scrollTo("depoimentos"), 100); } },
-    { label: "FAQ", action: () => { navigate("/"); setTimeout(() => scrollTo("faq"), 100); } },
+    { label: "Como Funciona", action: () => navigate("/", { state: { scrollTo: "como-funciona" } }) },
+    { label: "Depoimentos", action: () => navigate("/", { state: { scrollTo: "depoimentos" } }) },
+    { label: "FAQ", action: () => navigate("/", { state: { scrollTo: "faq" } }) },
   ];
 
   return (

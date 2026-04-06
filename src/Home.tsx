@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   CheckCircle, Clock, UserCheck, TrendingUp, ArrowRight,
   FileText, Banknote, ShieldCheck, Lock, Star, ChevronDown,
@@ -675,10 +675,22 @@ function FAQ() {
 
 // ─── Home ─────────────────────────────────────────────────────────────────────
 export default function Home() {
+  const location = useLocation();
+
   useEffect(() => {
     document.title = "Previdência Brasil, Advocacia Previdenciária";
-    window.scrollTo(0, 0);
-  }, []);
+    const target = (location.state as { scrollTo?: string } | null)?.scrollTo;
+    if (target) {
+      // Aguarda o DOM renderizar antes de rolar
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          document.getElementById(target)?.scrollIntoView({ behavior: "smooth" });
+        });
+      });
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location.state]);
 
   return (
     <div className="min-h-screen font-sans antialiased">
